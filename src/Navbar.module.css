@@ -1,0 +1,38 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 98px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  font-family: "Nerko One";
+  font-size: 44px;
+  font-weight: 400;
+  color: #2c4bc9;
+}
+.navlinks a.active {
+  color: #2c4bc9;
+}
+.navlinks {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+.navlinks a {
+  color: #000000;
+}
+.navlinks a:hover {
+}
+.question {
+  font-weight: 400;
+  color: #2c4bc9;
+  border: 2px #2c4bc9 solid;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
