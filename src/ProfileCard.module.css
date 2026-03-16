@@ -1,8 +1,34 @@
 .ProfileCard {
-    /* display: flex; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.user {
+/* .user {
     display: flex;
     justify-content: space-between;
     align-items: center;
+} */
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Poppins";
+  margin-bottom: 0;
+  color: #000000;
+}
+.productivity {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Poppins";
+  margin-top: 0;
+  color: #000000;
+}
+.avatar input {
+  display: none;
+}
+.avatar img {
+  width: 76px;
+  height: 77px;
+  border-radius: 50%;
+  object-fit: cover;
 }

@@ -5,9 +5,15 @@ export const ProfileCard = ({ user }) => {
     <div className={styles.ProfileCard}>
       <div className={styles.user}>
         <h1>Hi {user.name}!</h1>
-        <input type="file" accept="image/*" />
+        <h2 className={styles.productivity}>Your Productivity Overview</h2>
       </div>
-      <h2>Your Productivity Overview</h2>
+      <label className={styles.avatar}>
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+          alt="user-avatar"
+        />
+        <input type="file" accept="image/*" />
+      </label>
     </div>
   );
 };

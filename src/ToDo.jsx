@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaTrash } from "react-icons/fa";
+import styles from "./ToDo.module.css";
 export const ToDo = () => {
   const [tasks, setTasks] = useState([]);
 
@@ -36,17 +37,17 @@ setTasks(
   
 
   return (
-    <div>
+    <div className={styles.card}>
       <h2>My Tasks</h2>
-      <ul>
+      <ul className={styles.item}>
         {tasks.map((task) => (
           <li key={task.id}>
             <input
               type="checkbox"
               checked={task.done}
               onChange={() => toggleTask(task.id)}
-            />{" "}
-            <span style={{ marginLeft: "8px", marginRight: "8px" }}>
+            />
+            <span>
               {task.text}
             </span>
             <button onClick={() => deleteTask(task.id)}>

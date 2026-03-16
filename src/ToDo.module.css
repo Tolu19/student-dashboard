@@ -1,0 +1,17 @@
+.card {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+     padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 10px;
+}
+.item li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+.taskText {
+  flex: 1;
+  margin: 0 10px;
+}

@@ -1,3 +1,5 @@
+
+import styles from "./Calendar.module.css";
 export const Calendar = () => {
   const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -15,7 +17,7 @@ export const Calendar = () => {
   const allDays = [...blanks, ...dates];
 
   return (
-    <div>
+    <div className={styles.card}>
       <h2>
         {currentDate.toLocaleString("default", { month: "long" })} {year}
       </h2>
