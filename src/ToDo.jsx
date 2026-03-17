@@ -47,16 +47,19 @@ setTasks(
               checked={task.done}
               onChange={() => toggleTask(task.id)}
             />
-            <span>
-              {task.text}
-            </span>
-            <button onClick={() => deleteTask(task.id)}>
-              <FaTrash />
+            <span className={styles.taskText}>{task.text}</span>
+            <button
+              className={styles.deleteBtn}
+              onClick={() => deleteTask(task.id)}
+            >
+              <FaTrash className={styles.icon} />
             </button>
           </li>
         ))}
       </ul>
-      <button onClick={addTask}>Add Task</button>
+      <button className={styles.addbtn} onClick={addTask}>
+        Add Task
+      </button>
     </div>
   );
 };

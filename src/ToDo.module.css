@@ -4,14 +4,78 @@
      padding: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 20px 10px;
+    
+}
+.item {
+  padding: 0;
+  margin: 0;
 }
 .item li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 0;
+  padding: 8px 0; 
+    
+  
+
+}
+h2 {
+   font-size: 28px;
+  font-weight: 500;
+  font-family: "Poppins";
+  margin-bottom: 0;
+  color: #000000;
+
+}
+input[type="checkbox"] {
+  appearance: none;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 2px solid #888;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+input[type="checkbox"]:checked {
+  background-color: #2C4BC9;
+  border-color: #2C4BC9;
+}
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: #FFFFFF;
+  font-size: 1.2rem;
 }
 .taskText {
   flex: 1;
   margin: 0 10px;
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+.addbtn {
+  border-radius: 1rem;
+  background-color: #2C4BC9; 
+  color: #FFFFFF;
+  font-size: 2rem; 
+  font-weight: 500;  
+  border: none;
+  width: 100%;
+  margin: 1.2rem 0;
+  ;
+}
+.deleteBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.icon {
+  font-size: 1.6rem;
+  color: #888;
+  transition: 0.2s ease;
+}
+.icon:hover {
+  color: red;
+  transform: scale(1.2);
 }

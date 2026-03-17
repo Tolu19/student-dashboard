@@ -22,38 +22,20 @@ export const Calendar = () => {
         {currentDate.toLocaleString("default", { month: "long" })} {year}
       </h2>
 
-      <div>
+      <div className={styles.weekDays}>
         {daysOfWeek.map((day) => (
-          <span key={day} style={{ margin: "6px" }}>
+          <span key={day} >
             {day}
           </span>
         ))}
       </div>
 
-      <div>
+      <div className={styles.datesGrid}>
         {allDays.map((day, index) => (
-          <div
-            key={index}
-            style={{
-              display: "inline-block",
-              width: "40px",
-              textAlign: "center",
-              margin: "4px",
-            }}
-          >
+          <div key={index} className={styles.day}>
             <div>{day}</div>
 
-            {day === today && (
-              <div
-                style={{
-                  width: "6px",
-                  height: "6px",
-                  background: "blue",
-                  borderRadius: "50%",
-                  margin: "4px auto",
-                }}
-              />
-            )}
+            {day === today && <div className={styles.todayDot} />}
           </div>
         ))}
       </div>

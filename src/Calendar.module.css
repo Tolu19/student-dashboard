@@ -4,4 +4,46 @@
      padding: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 20px 10px;
+   
+}
+.weekDays {
+  display: grid;
+  grid-template-columns: repeat(7, 40px);
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+.weekDays span {
+  border: 1px solid #ccc;
+ 
+  text-align: center;
+  line-height: 20px;
+}
+
+.datesGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 40px); 
+  border: 1px solid #ccc;
+  
+  
+}
+
+.day {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+ 
+  position: relative;
+   
+}
+.todayDot {
+  width: 10px;
+  height: 10px;
+  background: lightblue;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+ 
 }

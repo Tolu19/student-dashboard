@@ -22,6 +22,7 @@ nav {
 }
 .navlinks a {
   color: #000000;
+  font-size: 1.6rem;
 }
 .navlinks a:hover {
 }
